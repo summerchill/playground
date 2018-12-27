@@ -5,21 +5,26 @@ body{
     min-height: 100vh;
 }
 
-header{
-    padding: 0 2em;
+.item1 { grid-area: header; }
+.item3 { grid-area: content; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'content'
+    'footer';
+  grid-gap: 1em;
+  background-color: #2196F3;
+  padding: 1em;
 }
 
-content{
-    display: block;
-    max-width: 1024px;
-    padding: 2em;
-}
-
-footer{
-    background: $textColor;
-    color: white;
-    padding: 2em;
-    text-align: center;
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
 
 h1, h2, h3, h4{
