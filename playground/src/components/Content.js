@@ -1,25 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Post from './Post'
-import postsData from './PostsData'
+import Transaction from './Transaction'
+import transactionData from './transactionData'
 
 class Content extends React.Component 
 {
     constructor() {
         super()
         this.state = {
-            posts: postsData
+            transactions: transactionData
         }
     }
 
     render() {
-        const postsComponents = this.state.posts.map(post => <Post key={post.id} title={post.title} text={post.text}/>)
+        const transactions = this.state.transactions.map(transaction => <Transaction key={transaction.id} amount={transaction.amount} desc={transaction.desc}/>)
 
         return (
-            <div>
-                {postsComponents}
-
-            </div>
+            <content>
+                {transactions}
+            </content>
         )
     }
 }
