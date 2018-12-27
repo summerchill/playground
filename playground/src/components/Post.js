@@ -6,8 +6,9 @@ class Post extends React.Component
         render() {
             return (
                 <div>
-                    <h3>Title of Post</h3>
-                    <p>Contents of Post</p>
+                    <img className='post-image'></img>
+                    <h3 className='post-title' >{this.props.title}</h3>
+                    <p className='post-text'>{this.props.text}</p>
                 </div>
             )
     }
