@@ -6,12 +6,12 @@ class Content extends React.Component
 {
     render() {
         return (
-            <div>
+            <content>
                 <Post />
                 <Post />
                 <Post />
                 <Post />                
-            </div>
+            </content>
         )
     }
 }

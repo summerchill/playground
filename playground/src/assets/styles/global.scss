@@ -1,0 +1,32 @@
+body{
+    font-size: 100%;
+    color: $textColor;
+    border-top: .5em solid $primaryColor;
+    min-height: 100vh;
+}
+
+header{
+    padding: 0 2em;
+}
+
+content{
+    display: block;
+    max-width: 1024px;
+    padding: 2em;
+}
+
+footer{
+    background: $textColor;
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
+    color: $primaryColor;
+}
+

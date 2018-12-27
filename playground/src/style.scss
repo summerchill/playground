@@ -1,4 +1,7 @@
 // Import core variables
+@import './assets/styles/variables.scss';
+@import './assets/styles/global.scss';
 
 // Import component files
 @import './components/Header.scss';
+@import './components/Post.scss';
