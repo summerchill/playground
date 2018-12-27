@@ -6,7 +6,7 @@ class Header extends React.Component
         render() {
             return (
                 <div>
-                    Header
+                    <h1>Social Networking App</h1>
                 </div>
             )
     }
