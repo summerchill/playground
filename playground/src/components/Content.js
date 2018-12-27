@@ -1,15 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Post from './Post'
 
-class Body extends React.Component 
+class Content extends React.Component 
 {
     render() {
         return (
             <div>
-                Body
+                <Post />
+                <Post />
+                <Post />
+                <Post />                
             </div>
         )
     }
 }
 
-export default Body
+export default Content
